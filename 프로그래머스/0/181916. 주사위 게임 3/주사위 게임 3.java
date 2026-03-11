@@ -15,8 +15,6 @@ class Solution {
             answer = (int) Math.pow(10 * p + q, 2);
             return answer;
         }
-        
-        // 3. 주사위가 두 개씩 같은 경우 (2+2)
         if (dice[0] == dice[1] && dice[2] == dice[3]) {
             int p = dice[0];
             int q = dice[2];
