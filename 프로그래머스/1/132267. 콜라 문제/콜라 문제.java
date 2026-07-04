@@ -1,0 +1,11 @@
+class Solution {
+    public int solution(int a, int b, int n) {
+        int answer = 0;
+        while (n >= a) {
+            int newCola = (n / a) * b;
+            n = (n % a) + newCola;
+            answer += newCola;
+        }
+        return answer;
+    }
+}
